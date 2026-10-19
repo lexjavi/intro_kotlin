@@ -68,7 +68,7 @@ fun main() {
         else -> println("Numero no registrado, registre un numero del 1 al 3") //sustituye el default
 
     }
-    //estructuras de repeticion
+   /* //estructuras de repeticion
     //for
     for(i in 1..10){
         println(i)
@@ -107,7 +107,7 @@ fun main() {
     }
     for(i in numeros2.indices){
         println(numeros2[i])
-    }
+    }*/
 
     //arreglos
     val matriz1 = Array(3){IntArray(3)} //Array para filas e IntArray para columnas
@@ -118,6 +118,17 @@ fun main() {
         intArrayOf(1, 2, 3, 4)
     )
 
+    //acceder
+    println(matriz2[0][0])
+    println(matriz2[2][0])
+
+    // recorrer un arreglo
+    for(i in matriz2.indices){
+        for(j in matriz2[i].indices){
+            println("${matriz2[i][j]}")
+        }
+        println()
+    }
 
 
 }
